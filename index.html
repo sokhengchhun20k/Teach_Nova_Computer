@@ -6,511 +6,204 @@
     <meta name="description" content="TechNova - Modern Computer Shop">
     <title>TechNova | Computer Shop</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="computer_shop2.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="header">
+<!-- =========================================================
+     NAVBAR
+     ========================================================= -->
 
-        <div class="nav-container">
+<header class="header">
 
-            <a href="#" class="logo">
-                <span class="logo-icon">
-                    <i class="fa-solid fa-microchip"></i>
-                </span>
-                <span>Tech<span>Nova</span></span>
-            </a>
+    <div class="nav-container">
 
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="#" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-microchip"></i>
+            </span>
 
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search products..."
-                >
+            <span>
+                Tech<span>Nova</span>
+            </span>
+        </a>
 
-                <button id="clearSearch" title="Clear search">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
+        <div class="search-box">
 
-            <div class="nav-actions">
+            <i class="fa-solid fa-magnifying-glass"></i>
 
-                <!-- ACCOUNT -->
-                <button
-                    class="nav-icon-btn account-nav-btn"
-                    id="accountBtn"
-                    title="Login / Register"
-                >
-                    <i class="fa-solid fa-user" id="accountIcon"></i>
-                    <span id="accountText">Account</span>
-                </button>
-
-                <!-- CART -->
-                <button
-                    class="nav-icon-btn"
-                    id="cartBtn"
-                    title="Shopping Cart"
-                >
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="cart-count" id="cartCount">0</span>
-                </button>
-
-                <!-- THEME -->
-                <button
-                    class="nav-icon-btn"
-                    id="themeBtn"
-                    title="Change theme"
-                >
-                    <i class="fa-solid fa-moon" id="themeIcon"></i>
-                </button>
-
-                <!-- MOBILE -->
-                <button
-                    class="mobile-menu-btn"
-                    id="mobileMenuBtn"
-                >
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-            </div>
-
-        </div>
-
-        <!-- Navigation -->
-        <nav class="category-nav" id="categoryNav">
-
-            <div class="category-container">
-
-                <button
-                    class="category-btn active"
-                    data-category="all"
-                >
-                    ALL
-                </button>
-
-                <button
-                    class="category-btn"
-                    data-category="laptop"
-                >
-                    <i class="fa-solid fa-laptop"></i>
-                    Laptops
-                </button>
-
-                <button
-                    class="category-btn"
-                    data-category="desktop"
-                >
-                    <i class="fa-solid fa-desktop"></i>
-                    PCs
-                </button>
-
-                <button
-                    class="category-btn"
-                    data-category="component"
-                >
-                    <i class="fa-solid fa-microchip"></i>
-                    Components
-                </button>
-
-                <button
-                    class="category-btn"
-                    data-category="monitor"
-                >
-                    <i class="fa-solid fa-display"></i>
-                    Monitors
-                </button>
-
-                <button
-                    class="category-btn"
-                    data-category="accessory"
-                >
-                    <i class="fa-solid fa-keyboard"></i>
-                    Accessories
-                </button>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-
-    <!-- ================= HERO ================= -->
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <div class="hero-text">
-
-                    <span class="hero-small-title">
-                        <i class="fa-solid fa-bolt"></i>
-                        NEXT GENERATION TECHNOLOGY
-                    </span>
-
-                    <h1>
-                        POWER YOUR
-                        <span>FUTURE.</span>
-                    </h1>
-
-                    <p>
-                        Discover powerful laptops, gaming PCs, components
-                        and accessories designed for your next level.
-                    </p>
-
-                    <button
-                        class="hero-btn"
-                        id="shopNowBtn"
-                    >
-                        SHOP NOW
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-
-                </div>
-
-                <div class="hero-product">
-
-                    <div class="hero-glow"></div>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1000&q=85"
-                        alt="Gaming Computer"
-                    >
-
-                    <div class="hero-floating-card">
-
-                        <i class="fa-solid fa-fire"></i>
-
-                        <div>
-                            <strong>HOT DEAL</strong>
-                            <small>Up to 30% OFF</small>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="hero-dots">
-
-                <button class="hero-dot active"></button>
-                <button class="hero-dot"></button>
-                <button class="hero-dot"></button>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= FEATURES ================= -->
-        <section class="features">
-
-            <div class="feature">
-
-                <div class="feature-icon">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
-
-                <div>
-                    <h3>Fast Delivery</h3>
-                    <p>Quick & secure delivery</p>
-                </div>
-
-            </div>
-
-            <div class="feature">
-
-                <div class="feature-icon">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-
-                <div>
-                    <h3>Warranty</h3>
-                    <p>Products you can trust</p>
-                </div>
-
-            </div>
-
-            <div class="feature">
-
-                <div class="feature-icon">
-                    <i class="fa-solid fa-headset"></i>
-                </div>
-
-                <div>
-                    <h3>Support</h3>
-                    <p>We're here to help</p>
-                </div>
-
-            </div>
-
-            <div class="feature">
-
-                <div class="feature-icon">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-
-                <div>
-                    <h3>Secure Payment</h3>
-                    <p>100% secure checkout</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PRODUCTS ================= -->
-        <section
-            class="products-section"
-            id="productsSection"
-        >
-
-            <div class="section-heading">
-
-                <div>
-
-                    <span class="section-label">
-                        OUR STORE
-                    </span>
-
-                    <h2>Explore Products</h2>
-
-                    <p id="productResultText">
-                        Showing all products
-                    </p>
-
-                </div>
-
-                <div class="sort-box">
-
-                    <label for="sortProducts">
-                        Sort:
-                    </label>
-
-                    <select id="sortProducts">
-
-                        <option value="default">
-                            Recommended
-                        </option>
-
-                        <option value="price-low">
-                            Price: Low to High
-                        </option>
-
-                        <option value="price-high">
-                            Price: High to Low
-                        </option>
-
-                        <option value="name">
-                            Name: A-Z
-                        </option>
-
-                        <option value="new">
-                            Newest
-                        </option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-            <div
-                class="products-grid"
-                id="productsGrid"
-            >
-                <!-- Products generated by JavaScript -->
-            </div>
-
-            <div
-                class="no-products"
-                id="noProducts"
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
             >
 
-                <i class="fa-solid fa-box-open"></i>
-
-                <h3>No products found</h3>
-
-                <p>
-                    Try another search or category.
-                </p>
-
-                <button id="resetProducts">
-                    Show All Products
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SPECIAL BANNER ================= -->
-        <section class="deal-banner">
-
-            <div class="deal-content">
-
-                <span>
-                    LIMITED TIME OFFER
-                </span>
-
-                <h2>
-                    Upgrade Your Setup.
-                </h2>
-
-                <p>
-                    Get selected gaming and productivity products
-                    at special prices.
-                </p>
-
-                <button id="dealBtn">
-                    VIEW DEALS
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-            </div>
-
-            <div class="deal-icon">
-                <i class="fa-solid fa-gamepad"></i>
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= PRODUCT MODAL ================= -->
-    <div
-        class="modal-overlay"
-        id="productModal"
-    >
-
-        <div class="product-modal">
-
-            <button
-                class="modal-close"
-                id="modalClose"
-            >
+            <button id="clearSearch" title="Clear search">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
-            <div class="modal-image-container">
+        </div>
 
-                <span
-                    class="modal-status"
-                    id="modalStatus"
-                >
-                    NEW
-                </span>
+        <div class="nav-actions">
 
-                <img
-                    id="modalImage"
-                    src=""
-                    alt="Product"
-                >
+            <button
+                class="nav-icon-btn account-nav-btn"
+                id="accountBtn"
+                title="Login / Register"
+            >
+                <i class="fa-solid fa-user" id="accountIcon"></i>
+                <span id="accountText">Account</span>
+            </button>
 
-            </div>
+            <button
+                class="nav-icon-btn"
+                id="cartBtn"
+                title="Shopping Cart"
+            >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
 
-            <div class="modal-info">
+            <button
+                class="nav-icon-btn"
+                id="themeBtn"
+                title="Change theme"
+            >
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
 
-                <span
-                    class="modal-category"
-                    id="modalCategory"
-                >
-                    LAPTOP
-                </span>
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-                <h2 id="modalName">
-                    Product Name
-                </h2>
+        </div>
 
-                <div class="modal-rating">
+    </div>
 
-                    <span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </span>
 
-                    <small>
-                        4.9 / 5
-                    </small>
+    <nav class="category-nav" id="categoryNav">
 
-                </div>
+        <div class="category-container">
 
-                <div class="modal-price">
+            <button
+                class="category-btn active"
+                data-category="all"
+            >
+                ALL
+            </button>
 
-                    <strong id="modalPrice">
-                        $999
-                    </strong>
+            <button
+                class="category-btn"
+                data-category="laptop"
+            >
+                <i class="fa-solid fa-laptop"></i>
+                Laptops
+            </button>
 
-                    <del id="modalOldPrice">
-                        $1,199
-                    </del>
+            <button
+                class="category-btn"
+                data-category="desktop"
+            >
+                <i class="fa-solid fa-desktop"></i>
+                PCs
+            </button>
 
-                    <span id="modalDiscount">
-                        -20%
-                    </span>
+            <button
+                class="category-btn"
+                data-category="component"
+            >
+                <i class="fa-solid fa-microchip"></i>
+                Components
+            </button>
 
-                </div>
+            <button
+                class="category-btn"
+                data-category="monitor"
+            >
+                <i class="fa-solid fa-display"></i>
+                Monitors
+            </button>
 
-                <p
-                    class="modal-description"
-                    id="modalDescription"
-                >
-                    Product description.
-                </p>
+            <button
+                class="category-btn"
+                data-category="accessory"
+            >
+                <i class="fa-solid fa-keyboard"></i>
+                Accessories
+            </button>
 
-                <div class="specifications">
+        </div>
 
-                    <h3>
-                        Specifications
-                    </h3>
+    </nav>
 
-                    <div
-                        class="spec-grid"
-                        id="modalSpecs"
-                    >
-                        <!-- Specs generated by JS -->
-                    </div>
+</header>
 
-                </div>
 
-                <div class="modal-actions">
+<!-- =========================================================
+     HERO
+     ========================================================= -->
 
-                    <button
-                        class="buy-btn"
-                        id="modalBuyBtn"
-                    >
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        GO TO BUY
-                    </button>
+<main>
 
-                    <button
-                        class="wishlist-btn"
-                        id="wishlistBtn"
-                    >
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
+<section class="hero">
 
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="hero-small-title">
+                <i class="fa-solid fa-bolt"></i>
+                NEXT GENERATION TECHNOLOGY
+            </span>
+
+            <h1>
+                POWER YOUR
+                <span>FUTURE.</span>
+            </h1>
+
+            <p>
+                Discover powerful laptops, gaming PCs, components
+                and accessories designed for your next level.
+            </p>
+
+            <button
+                class="hero-btn"
+                id="shopNowBtn"
+            >
+                SHOP NOW
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+        <div class="hero-product">
+
+            <div class="hero-glow"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1000&q=85"
+                alt="Gaming Computer"
+            >
+
+            <div class="hero-floating-card">
+
+                <i class="fa-solid fa-fire"></i>
+
+                <div>
+                    <strong>HOT DEAL</strong>
+                    <small>Up to 30% OFF</small>
                 </div>
 
             </div>
@@ -520,428 +213,1357 @@
     </div>
 
 
-    <!-- ================= CART SIDEBAR ================= -->
+    <div class="hero-dots">
+
+        <button class="hero-dot active"></button>
+        <button class="hero-dot"></button>
+        <button class="hero-dot"></button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FEATURES
+     ========================================================= -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+        </div>
+
+        <div>
+            <h3>Fast Delivery</h3>
+            <p>Quick & secure delivery</p>
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div>
+            <h3>Warranty</h3>
+            <p>Products you can trust</p>
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+
+        <div>
+            <h3>Support</h3>
+            <p>We're here to help</p>
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <div>
+            <h3>Secure Payment</h3>
+            <p>100% secure checkout</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS
+     ========================================================= -->
+
+<section
+    class="products-section"
+    id="productsSection"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-label">
+                OUR STORE
+            </span>
+
+            <h2>
+                Explore Products
+            </h2>
+
+            <p id="productResultText">
+                Showing all products
+            </p>
+
+        </div>
+
+
+        <div class="sort-box">
+
+            <label for="sortProducts">
+                Sort:
+            </label>
+
+            <select id="sortProducts">
+
+                <option value="default">
+                    Recommended
+                </option>
+
+                <option value="price-low">
+                    Price: Low to High
+                </option>
+
+                <option value="price-high">
+                    Price: High to Low
+                </option>
+
+                <option value="name">
+                    Name: A-Z
+                </option>
+
+                <option value="new">
+                    Newest
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
     <div
-        class="cart-overlay"
-        id="cartOverlay"
+        class="products-grid"
+        id="productsGrid"
+    ></div>
+
+
+    <div
+        class="no-products"
+        id="noProducts"
     >
 
-        <div class="cart-sidebar">
+        <i class="fa-solid fa-box-open"></i>
 
-            <div class="cart-header">
+        <h3>
+            No products found
+        </h3>
 
-                <h2>
+        <p>
+            Try another search or category.
+        </p>
+
+        <button id="resetProducts">
+            Show All Products
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DEAL BANNER
+     ========================================================= -->
+
+<section class="deal-banner">
+
+    <div class="deal-content">
+
+        <span>
+            LIMITED TIME OFFER
+        </span>
+
+        <h2>
+            Upgrade Your Setup.
+        </h2>
+
+        <p>
+            Get selected gaming and productivity products
+            at special prices.
+        </p>
+
+        <button id="dealBtn">
+            VIEW DEALS
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <div class="deal-icon">
+        <i class="fa-solid fa-gamepad"></i>
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     PRODUCT MODAL
+     ========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="productModal"
+>
+
+    <div class="product-modal">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="modal-image-container">
+
+            <span
+                class="modal-status"
+                id="modalStatus"
+            >
+                NEW
+            </span>
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Product"
+            >
+
+        </div>
+
+
+        <div class="modal-info">
+
+            <span
+                class="modal-category"
+                id="modalCategory"
+            >
+                LAPTOP
+            </span>
+
+            <h2 id="modalName">
+                Product Name
+            </h2>
+
+
+            <div class="modal-rating">
+
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+
+                <small id="modalRating">
+                    4.9 / 5
+                </small>
+
+            </div>
+
+
+            <div class="modal-price">
+
+                <strong id="modalPrice">
+                    $999
+                </strong>
+
+                <del id="modalOldPrice">
+                    $1,199
+                </del>
+
+                <span id="modalDiscount">
+                    -20%
+                </span>
+
+            </div>
+
+
+            <p
+                class="modal-description"
+                id="modalDescription"
+            >
+                Product description.
+            </p>
+
+
+            <div class="specifications">
+
+                <h3>
+                    Specifications
+                </h3>
+
+                <div
+                    class="spec-grid"
+                    id="modalSpecs"
+                ></div>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    class="buy-btn"
+                    id="modalBuyBtn"
+                >
                     <i class="fa-solid fa-cart-shopping"></i>
-                    Your Cart
-                </h2>
+                    GO TO BUY
+                </button>
 
-                <button id="closeCart">
-                    <i class="fa-solid fa-xmark"></i>
+                <button
+                    class="wishlist-btn"
+                    id="wishlistBtn"
+                >
+                    <i class="fa-regular fa-heart"></i>
                 </button>
 
             </div>
 
-            <div
-                class="cart-items"
-                id="cartItems"
-            >
-                <!-- Cart items -->
-            </div>
+        </div>
 
-            <div
-                class="cart-empty"
-                id="cartEmpty"
-            >
+    </div>
 
+</div>
+
+
+<!-- =========================================================
+     CART
+     ========================================================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
+    <div class="cart-sidebar">
+
+        <div class="cart-header">
+
+            <h2>
                 <i class="fa-solid fa-cart-shopping"></i>
+                Your Cart
+            </h2>
 
-                <h3>
-                    Your cart is empty
-                </h3>
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
 
-                <p>
-                    Add some products to your cart.
-                </p>
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        ></div>
+
+
+        <div
+            class="cart-empty"
+            id="cartEmpty"
+        >
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add some products to your cart.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
 
             </div>
 
-            <div class="cart-footer">
 
-                <div class="cart-total">
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                GO TO CHECKOUT
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     LOGIN / REGISTER
+     ========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="authModal"
+>
+
+    <div class="auth-modal">
+
+        <button
+            class="modal-close"
+            id="authClose"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <!-- LOGIN -->
+
+        <div
+            class="auth-panel"
+            id="loginPanel"
+        >
+
+            <div class="auth-icon">
+                <i class="fa-solid fa-user-lock"></i>
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+                Login to continue shopping.
+            </p>
+
+
+            <form id="loginForm">
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Email address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    LOGIN
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Don't have an account?
+
+                <button
+                    type="button"
+                    id="showRegister"
+                >
+                    Register
+                </button>
+
+            </p>
+
+
+            <div class="admin-hint">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Admins can use their admin account here.
+
+            </div>
+
+        </div>
+
+
+        <!-- REGISTER -->
+
+        <div
+            class="auth-panel hidden"
+            id="registerPanel"
+        >
+
+            <div class="auth-icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+
+            <h2>
+                Create Account
+            </h2>
+
+            <p>
+                Register before placing your order.
+            </p>
+
+
+            <form id="registerForm">
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Email address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Password (6+ characters)"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-input">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="registerConfirmPassword"
+                        placeholder="Confirm password"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    CREATE ACCOUNT
+                    <i class="fa-solid fa-user-plus"></i>
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    id="showLogin"
+                >
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CHECKOUT MODAL
+     ========================================================= -->
+
+<div
+    class="modal-overlay checkout-overlay"
+    id="checkoutModal"
+>
+
+    <div class="checkout-modal">
+
+        <button
+            class="modal-close"
+            id="checkoutClose"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="checkout-top">
+
+            <span class="section-label">
+                SECURE CHECKOUT
+            </span>
+
+            <h2>
+                Complete Your Order
+            </h2>
+
+            <p>
+                Enter your delivery information and choose a payment method.
+            </p>
+
+        </div>
+
+
+        <div class="checkout-steps">
+
+            <div class="checkout-step active">
+                <span>1</span>
+                <p>Delivery</p>
+            </div>
+
+            <div class="checkout-line"></div>
+
+            <div class="checkout-step active">
+                <span>2</span>
+                <p>Payment</p>
+            </div>
+
+            <div class="checkout-line"></div>
+
+            <div class="checkout-step">
+                <span>3</span>
+                <p>Confirmation</p>
+            </div>
+
+        </div>
+
+
+        <div class="checkout-layout">
+
+            <form
+                class="checkout-form"
+                id="checkoutForm"
+            >
+
+                <!-- DELIVERY -->
+
+                <section class="checkout-card">
+
+                    <div class="checkout-card-title">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <h3>
+                                Delivery Information
+                            </h3>
+
+                            <p>
+                                Where should we deliver your order?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="checkout-grid">
+
+                        <label>
+                            Full Name
+
+                            <input
+                                type="text"
+                                id="checkoutName"
+                                placeholder="Your full name"
+                                required
+                            >
+
+                        </label>
+
+
+                        <label>
+                            Phone Number
+
+                            <input
+                                type="tel"
+                                id="checkoutPhone"
+                                inputmode="tel"
+                                placeholder="012 345 678"
+                                required
+                            >
+
+                        </label>
+
+
+                        <label>
+                            City / Province
+
+                            <select
+                                id="checkoutProvince"
+                                required
+                            >
+
+                                <option value="">
+                                    Select province
+                                </option>
+
+                                <option>
+                                    Phnom Penh
+                                </option>
+
+                                <option>
+                                    Kandal
+                                </option>
+
+                                <option>
+                                    Siem Reap
+                                </option>
+
+                                <option>
+                                    Battambang
+                                </option>
+
+                                <option>
+                                    Prey Veng
+                                </option>
+
+                                <option>
+                                    Kampong Cham
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </label>
+
+
+                        <label>
+                            District / Area
+
+                            <input
+                                type="text"
+                                id="checkoutDistrict"
+                                placeholder="District / commune"
+                                required
+                            >
+
+                        </label>
+
+
+                        <label class="full">
+
+                            Address / Location Details
+
+                            <textarea
+                                id="checkoutAddress"
+                                rows="3"
+                                placeholder="Street, house/building number, village..."
+                                required
+                            ></textarea>
+
+                        </label>
+
+
+                        <label class="full">
+
+                            Landmark
+                            <span class="optional">
+                                Optional
+                            </span>
+
+                            <input
+                                type="text"
+                                id="checkoutLandmark"
+                                placeholder="Nearby school, shop, landmark, etc."
+                            >
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+
+                <!-- PAYMENT -->
+
+                <section class="checkout-card">
+
+                    <div class="checkout-card-title">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                        <div>
+
+                            <h3>
+                                Payment Method
+                            </h3>
+
+                            <p>
+                                Choose how you want to pay.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-options">
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="Cash on Delivery"
+                                checked
+                            >
+
+                            <span class="payment-radio"></span>
+
+                            <span class="payment-icon">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                            </span>
+
+                            <span>
+
+                                <strong>
+                                    Cash on Delivery
+                                </strong>
+
+                                <small>
+                                    Pay when your order arrives.
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="QR / Bank Transfer"
+                            >
+
+                            <span class="payment-radio"></span>
+
+                            <span class="payment-icon">
+                                <i class="fa-solid fa-qrcode"></i>
+                            </span>
+
+                            <span>
+
+                                <strong>
+                                    QR / Bank Transfer
+                                </strong>
+
+                                <small>
+                                    Demo payment option.
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div
+                        class="payment-info"
+                        id="paymentInfo"
+                    >
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        <span>
+                            Pay when your order arrives.
+                            No online payment details are required.
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+                <button
+                    class="confirm-order-btn"
+                    id="confirmOrderBtn"
+                    type="submit"
+                >
+                    CONFIRM ORDER
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+            </form>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="checkout-summary-card">
+
+                <div class="summary-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            YOUR ORDER
+                        </span>
+
+                        <h3>
+                            Order Summary
+                        </h3>
+
+                    </div>
+
+                    <span
+                        class="summary-count"
+                        id="summaryCount"
+                    ></span>
+
+                </div>
+
+
+                <div id="checkoutSummary"></div>
+
+
+                <div class="summary-total-row">
 
                     <span>
-                        Total
+                        Subtotal
                     </span>
 
-                    <strong id="cartTotal">
+                    <strong id="checkoutSubtotal">
                         $0.00
                     </strong>
 
                 </div>
 
-                <button
-                    class="checkout-btn"
-                    id="checkoutBtn"
-                >
-                    GO TO CHECKOUT
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
 
-            </div>
+                <div class="summary-total-row delivery">
 
-        </div>
+                    <span>
+                        Delivery
+                    </span>
 
-    </div>
+                    <strong>
+                        FREE
+                    </strong>
 
-
-    <!-- ================= AUTH MODAL ================= -->
-    <div
-        class="modal-overlay"
-        id="authModal"
-    >
-
-        <div class="auth-modal">
-
-            <button
-                class="modal-close"
-                id="authClose"
-            >
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <!-- LOGIN -->
-            <div
-                class="auth-panel"
-                id="loginPanel"
-            >
-
-                <div class="auth-icon">
-                    <i class="fa-solid fa-user"></i>
                 </div>
 
-                <h2>
-                    Welcome Back
-                </h2>
 
-                <p>
-                    Login to continue shopping.
-                </p>
+                <div class="summary-grand">
 
-                <form id="loginForm">
+                    <span>
+                        Total
+                    </span>
 
-                    <div class="auth-input">
+                    <strong id="checkoutGrandTotal">
+                        $0.00
+                    </strong>
 
-                        <i class="fa-solid fa-envelope"></i>
+                </div>
 
-                        <input
-                            type="email"
-                            id="loginEmail"
-                            placeholder="Email address"
-                            required
-                        >
 
-                    </div>
+                <div class="checkout-note">
 
-                    <div class="auth-input">
-
-                        <i class="fa-solid fa-lock"></i>
-
-                        <input
-                            type="password"
-                            id="loginPassword"
-                            placeholder="Password"
-                            required
-                        >
-
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="auth-submit"
-                    >
-                        LOGIN
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-
-                </form>
-
-                <p class="auth-switch">
-                    Don't have an account?
-                    <button
-                        type="button"
-                        id="showRegister"
-                    >
-                        Register
-                    </button>
-                </p>
-
-                <div class="admin-hint">
                     <i class="fa-solid fa-shield-halved"></i>
-                    Admins can use their admin account here.
+
+                    <span>
+                        Your order information is saved in this demo
+                        using local storage.
+                    </span>
+
                 </div>
 
-            </div>
-
-
-            <!-- REGISTER -->
-            <div
-                class="auth-panel hidden"
-                id="registerPanel"
-            >
-
-                <div class="auth-icon">
-                    <i class="fa-solid fa-user-plus"></i>
-                </div>
-
-                <h2>
-                    Create Account
-                </h2>
-
-                <p>
-                    Register to start shopping.
-                </p>
-
-                <form id="registerForm">
-
-                    <div class="auth-input">
-
-                        <i class="fa-solid fa-user"></i>
-
-                        <input
-                            type="text"
-                            id="registerName"
-                            placeholder="Full name"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="auth-input">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                        <input
-                            type="email"
-                            id="registerEmail"
-                            placeholder="Email address"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="auth-input">
-
-                        <i class="fa-solid fa-lock"></i>
-
-                        <input
-                            type="password"
-                            id="registerPassword"
-                            placeholder="Password"
-                            minlength="6"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="auth-input">
-
-                        <i class="fa-solid fa-lock"></i>
-
-                        <input
-                            type="password"
-                            id="registerConfirmPassword"
-                            placeholder="Confirm password"
-                            minlength="6"
-                            required
-                        >
-
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="auth-submit"
-                    >
-                        CREATE ACCOUNT
-                        <i class="fa-solid fa-user-plus"></i>
-                    </button>
-
-                </form>
-
-                <p class="auth-switch">
-                    Already have an account?
-                    <button
-                        type="button"
-                        id="showLogin"
-                    >
-                        Login
-                    </button>
-                </p>
-
-            </div>
+            </aside>
 
         </div>
 
     </div>
 
+</div>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
 
-        <div class="footer-container">
+<!-- =========================================================
+     ORDER SUCCESS
+     ========================================================= -->
 
-            <div class="footer-main">
+<div
+    class="modal-overlay"
+    id="successModal"
+>
 
-                <div class="footer-brand">
+    <div class="success-modal">
 
-                    <a
-                        href="#"
-                        class="logo footer-logo"
-                    >
-                        <span class="logo-icon">
-                            <i class="fa-solid fa-microchip"></i>
-                        </span>
+        <div class="success-icon">
 
-                        <span>
-                            Tech<span>Nova</span>
-                        </span>
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <span class="success-badge">
+            ORDER CONFIRMED
+        </span>
+
+
+        <h2>
+            Order Successful!
+        </h2>
+
+
+        <p>
+            Your order has been received successfully.
+            Thank you for shopping with TechNova.
+        </p>
+
+
+        <div class="success-order-id">
+
+            <span>
+                Order ID
+            </span>
+
+            <strong id="successOrderId">
+                ORD-000000
+            </strong>
+
+        </div>
+
+
+        <div class="success-details">
+
+            <div>
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>
+                    Customer
+                </span>
+
+                <strong id="successCustomer">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <span>
+                    Payment
+                </span>
+
+                <strong id="successPayment">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>
+                    Delivery
+                </span>
+
+                <strong id="successAddress">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-dollar-sign"></i>
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="successTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="success-btn"
+            id="successContinue"
+        >
+            CONTINUE SHOPPING
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a
+                    href="#"
+                    class="logo footer-logo"
+                >
+
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </span>
+
+                    <span>
+                        Tech<span>Nova</span>
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Your trusted destination for computers,
+                    components, gaming gear and technology.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
+
+                    <a href="#" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" title="Telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                    <a href="#" title="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <a href="tel:+85512345678">
+                    <i class="fa-solid fa-phone"></i>
+                    +855 12 345 678
+                </a>
+
+                <a href="mailto:technova@example.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    technova@example.com
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-telegram"></i>
+                    @TechNovaStore
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Store
+                </h3>
+
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Phnom Penh, Cambodia
+                </a>
+
+
+                <div class="opening-hours">
 
                     <p>
-                        Your trusted destination for computers,
-                        components, gaming gear and technology.
+                        <strong>Mon - Sat</strong>
+                        <span>
+                            8:00 AM - 8:00 PM
+                        </span>
                     </p>
 
-                    <div class="social-links">
-
-                        <a href="#" title="Facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-
-                        <a href="#" title="Instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-
-                        <a href="#" title="Telegram">
-                            <i class="fa-brands fa-telegram"></i>
-                        </a>
-
-                        <a href="#" title="TikTok">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="footer-column">
-
-                    <h3>
-                        Contact Us
-                    </h3>
-
-                    <a href="tel:+85512345678">
-                        <i class="fa-solid fa-phone"></i>
-                        +855 12 345 678
-                    </a>
-
-                    <a href="mailto:technova@example.com">
-                        <i class="fa-solid fa-envelope"></i>
-                        technova@example.com
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-telegram"></i>
-                        @TechNovaStore
-                    </a>
-
-                </div>
-
-
-                <div class="footer-column">
-
-                    <h3>
-                        Store
-                    </h3>
-
-                    <a href="#">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Phnom Penh, Cambodia
-                    </a>
-
-                    <div class="opening-hours">
-
-                        <p>
-                            <strong>Mon - Sat</strong>
-                            <span>8:00 AM - 8:00 PM</span>
-                        </p>
-
-                        <p>
-                            <strong>Sunday</strong>
-                            <span>9:00 AM - 6:00 PM</span>
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="footer-column">
-
-                    <h3>
-                        Quick Links
-                    </h3>
-
-                    <a href="#productsSection">
-                        All Products
-                    </a>
-
-                    <a href="#productsSection">
-                        Gaming
-                    </a>
-
-                    <a href="#productsSection">
-                        Laptops
-                    </a>
-
-                    <a href="#productsSection">
-                        Accessories
-                    </a>
+                    <p>
+                        <strong>Sunday</strong>
+                        <span>
+                            9:00 AM - 6:00 PM
+                        </span>
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <div class="footer-bottom">
+            <div class="footer-column">
 
-                <p>
-                    © 2026 TechNova. All rights reserved.
-                </p>
+                <h3>
+                    Quick Links
+                </h3>
 
-                <div>
-                    <span>Privacy Policy</span>
-                    <span>Terms & Conditions</span>
-                </div>
+                <a href="#productsSection">
+                    All Products
+                </a>
+
+                <a href="#productsSection">
+                    Gaming
+                </a>
+
+                <a href="#productsSection">
+                    Laptops
+                </a>
+
+                <a href="#productsSection">
+                    Accessories
+                </a>
 
             </div>
 
         </div>
 
-    </footer>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TechNova. All rights reserved.
+            </p>
+
+            <div>
+
+                <span>
+                    Privacy Policy
+                </span>
+
+                <span>
+                    Terms & Conditions
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
 
 
-    <!-- Back to top -->
-    <button
-        class="back-to-top"
-        id="backToTop"
-    >
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
+<!-- BACK TO TOP -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+>
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
 
 
-    <!-- JavaScript -->
-    <script src="computer_shop2.js"></script>
+<script src="computer_shop2.js"></script>
 
 </body>
 </html>
