@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>TechNova | Admin Dashboard</title>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-        crossorigin
-    >
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
@@ -33,16 +18,14 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <link
-        rel="stylesheet"
-        href="admin.css"
-    >
-
+    <link rel="stylesheet" href="admin.css">
 </head>
 
 <body>
 
-    <!-- SIDEBAR -->
+    <!-- =====================================================
+         ADMIN SIDEBAR
+         ===================================================== -->
 
     <aside class="admin-sidebar">
 
@@ -53,68 +36,77 @@
             </div>
 
             <div>
-                <strong>Tech<span>Nova</span></strong>
+                <strong>
+                    Tech<span>Nova</span>
+                </strong>
+
                 <small>ADMIN PANEL</small>
             </div>
 
         </div>
 
+
         <nav class="admin-nav">
 
             <button
-                type="button"
                 class="admin-nav-btn active"
                 data-page="dashboard"
+                type="button"
             >
                 <i class="fa-solid fa-chart-line"></i>
-                Dashboard
+                <span>Dashboard</span>
             </button>
 
+
             <button
-                type="button"
                 class="admin-nav-btn"
                 data-page="products"
+                type="button"
             >
                 <i class="fa-solid fa-box"></i>
-                Products
+                <span>Products</span>
             </button>
 
+
             <button
-                type="button"
                 class="admin-nav-btn"
                 data-page="orders"
+                type="button"
             >
                 <i class="fa-solid fa-cart-shopping"></i>
-                Orders
+                <span>Orders</span>
             </button>
 
+
             <button
-                type="button"
                 class="admin-nav-btn"
                 data-page="customers"
+                type="button"
             >
                 <i class="fa-solid fa-users"></i>
-                Customers
+                <span>Customers</span>
             </button>
 
         </nav>
 
+
         <div class="sidebar-bottom">
 
             <button
-                type="button"
                 id="viewStoreBtn"
+                type="button"
             >
                 <i class="fa-solid fa-store"></i>
-                View Store
+                <span>View Store</span>
             </button>
 
+
             <button
-                type="button"
                 id="adminLogoutBtn"
+                type="button"
             >
                 <i class="fa-solid fa-right-from-bracket"></i>
-                Logout
+                <span>Logout</span>
             </button>
 
         </div>
@@ -122,21 +114,27 @@
     </aside>
 
 
-    <!-- MAIN -->
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
 
     <main class="admin-main">
+
+        <!-- HEADER -->
 
         <header class="admin-header">
 
             <div class="header-left">
 
                 <button
-                    type="button"
                     class="mobile-sidebar-btn"
                     id="mobileSidebarBtn"
+                    type="button"
+                    aria-label="Open menu"
                 >
                     <i class="fa-solid fa-bars"></i>
                 </button>
+
 
                 <div class="page-heading">
 
@@ -145,12 +143,13 @@
                     </h1>
 
                     <p id="pageSubtitle">
-                        Welcome back, Admin.
+                        Overview of your TechNova store
                     </p>
 
                 </div>
 
             </div>
+
 
             <div class="admin-profile">
 
@@ -173,12 +172,16 @@
         </header>
 
 
-        <!-- ================= DASHBOARD ================= -->
+        <!-- =================================================
+             DASHBOARD PAGE
+             ================================================= -->
 
         <section
             class="admin-page active"
             id="dashboardPage"
         >
+
+            <!-- STATS -->
 
             <div class="stats-grid">
 
@@ -189,13 +192,8 @@
                     </div>
 
                     <div>
-                        <span>
-                            Total Products
-                        </span>
-
-                        <strong id="totalProducts">
-                            0
-                        </strong>
+                        <span>Total Products</span>
+                        <strong id="totalProducts">0</strong>
                     </div>
 
                 </div>
@@ -204,17 +202,12 @@
                 <div class="stat-card">
 
                     <div class="stat-icon purple">
-                        <i class="fa-solid fa-users"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
 
                     <div>
-                        <span>
-                            Customers
-                        </span>
-
-                        <strong id="totalCustomers">
-                            0
-                        </strong>
+                        <span>Total Orders</span>
+                        <strong id="totalOrders">0</strong>
                     </div>
 
                 </div>
@@ -223,17 +216,12 @@
                 <div class="stat-card">
 
                     <div class="stat-icon green">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-users"></i>
                     </div>
 
                     <div>
-                        <span>
-                            Orders
-                        </span>
-
-                        <strong id="totalOrders">
-                            0
-                        </strong>
+                        <span>Total Customers</span>
+                        <strong id="totalCustomers">0</strong>
                     </div>
 
                 </div>
@@ -246,13 +234,8 @@
                     </div>
 
                     <div>
-                        <span>
-                            Sales
-                        </span>
-
-                        <strong id="totalSales">
-                            $0.00
-                        </strong>
+                        <span>Total Sales</span>
+                        <strong id="totalSales">$0.00</strong>
                     </div>
 
                 </div>
@@ -260,16 +243,47 @@
             </div>
 
 
+            <!-- SALES CHART -->
+
+            <div
+                class="admin-card sales-chart-card"
+                id="salesChartCard"
+            >
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Sales Overview</h2>
+
+                        <p>
+                            Sales performance over the last 7 months
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="sales-chart-wrap">
+
+                    <canvas id="salesChart"></canvas>
+
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD GRID -->
+
             <div class="dashboard-grid">
+
+                <!-- RECENT ORDERS -->
 
                 <div class="admin-card">
 
                     <div class="card-heading">
 
                         <div>
-                            <h2>
-                                Recent Orders
-                            </h2>
+                            <h2>Recent Orders</h2>
 
                             <p>
                                 Latest customer orders
@@ -277,43 +291,71 @@
                         </div>
 
                         <button
-                            type="button"
                             class="view-all-btn"
                             data-page-target="orders"
+                            type="button"
                         >
                             View All
                         </button>
 
                     </div>
 
+
                     <div id="recentOrders">
-                        <!-- generated -->
+
+                        <div class="empty-state">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <p>
+                                No orders yet
+                            </p>
+
+                        </div>
+
                     </div>
 
                 </div>
 
+
+                <!-- STORE OVERVIEW -->
 
                 <div class="admin-card">
 
                     <div class="card-heading">
 
                         <div>
-                            <h2>
-                                Store Overview
-                            </h2>
+                            <h2>Store Overview</h2>
 
                             <p>
-                                Current inventory
+                                Current store information
                             </p>
                         </div>
 
                     </div>
 
-                    <div
-                        class="overview-list"
-                        id="storeOverview"
-                    >
-                        <!-- generated -->
+
+                    <div id="storeOverview">
+
+                        <div class="overview-list">
+
+                            <div class="overview-item">
+                                <span>Products</span>
+                                <strong>0</strong>
+                            </div>
+
+                            <div class="overview-item">
+                                <span>Total Stock</span>
+                                <strong>0</strong>
+                            </div>
+
+                            <div class="overview-item">
+                                <span>Store Status</span>
+                                <strong>Online</strong>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -323,7 +365,9 @@
         </section>
 
 
-        <!-- ================= PRODUCTS ================= -->
+        <!-- =================================================
+             PRODUCTS PAGE
+             ================================================= -->
 
         <section
             class="admin-page"
@@ -339,15 +383,16 @@
                     </h2>
 
                     <p>
-                        Manage products displayed in your store.
+                        Manage your TechNova products and inventory
                     </p>
 
                 </div>
 
+
                 <button
-                    type="button"
                     class="primary-btn"
                     id="addProductBtn"
+                    type="button"
                 >
                     <i class="fa-solid fa-plus"></i>
                     Add Product
@@ -390,8 +435,26 @@
 
                         </thead>
 
+
                         <tbody id="productsTable">
-                            <!-- generated -->
+
+                            <tr>
+
+                                <td
+                                    colspan="5"
+                                    class="empty-table"
+                                >
+
+                                    <i class="fa-solid fa-box-open"></i>
+
+                                    <p>
+                                        No products found
+                                    </p>
+
+                                </td>
+
+                            </tr>
+
                         </tbody>
 
                     </table>
@@ -403,7 +466,9 @@
         </section>
 
 
-        <!-- ================= ORDERS ================= -->
+        <!-- =================================================
+             ORDERS PAGE
+             ================================================= -->
 
         <section
             class="admin-page"
@@ -419,7 +484,7 @@
                     </h2>
 
                     <p>
-                        View and manage customer orders.
+                        Manage customer orders and delivery status
                     </p>
 
                 </div>
@@ -465,8 +530,26 @@
 
                         </thead>
 
+
                         <tbody id="ordersTable">
-                            <!-- generated -->
+
+                            <tr>
+
+                                <td
+                                    colspan="6"
+                                    class="empty-table"
+                                >
+
+                                    <i class="fa-solid fa-receipt"></i>
+
+                                    <p>
+                                        No orders found
+                                    </p>
+
+                                </td>
+
+                            </tr>
+
                         </tbody>
 
                     </table>
@@ -478,7 +561,9 @@
         </section>
 
 
-        <!-- ================= CUSTOMERS ================= -->
+        <!-- =================================================
+             CUSTOMERS PAGE
+             ================================================= -->
 
         <section
             class="admin-page"
@@ -494,7 +579,7 @@
                     </h2>
 
                     <p>
-                        Registered TechNova customers.
+                        View and manage registered customers
                     </p>
 
                 </div>
@@ -532,8 +617,26 @@
 
                         </thead>
 
+
                         <tbody id="customersTable">
-                            <!-- generated -->
+
+                            <tr>
+
+                                <td
+                                    colspan="4"
+                                    class="empty-table"
+                                >
+
+                                    <i class="fa-solid fa-users"></i>
+
+                                    <p>
+                                        No customers found
+                                    </p>
+
+                                </td>
+
+                            </tr>
+
                         </tbody>
 
                     </table>
@@ -544,287 +647,333 @@
 
         </section>
 
-    </main>
 
+        <!-- =================================================
+             PRODUCT FORM MODAL
+             ================================================= -->
 
-    <!-- ================= PRODUCT FORM MODAL ================= -->
+        <div
+            class="admin-modal-overlay"
+            id="productFormModal"
+        >
 
-    <div
-        class="admin-modal-overlay"
-        id="productFormModal"
-    >
+            <div class="admin-form-modal">
 
-        <div class="admin-form-modal">
-
-            <button
-                type="button"
-                class="admin-modal-close"
-                id="closeProductForm"
-            >
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <h2 id="productFormTitle">
-                Add Product
-            </h2>
-
-            <p>
-                Enter the product information below.
-            </p>
-
-
-            <form id="productForm">
-
-                <input
-                    type="hidden"
-                    id="productId"
+                <button
+                    class="admin-modal-close"
+                    id="closeProductForm"
+                    type="button"
+                    aria-label="Close"
                 >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
 
 
-                <div class="form-grid">
+                <h2 id="productFormTitle">
+                    Add Product
+                </h2>
 
-                    <div class="form-group">
+                <p>
+                    Add or update product information and inventory.
+                </p>
 
-                        <label for="productName">
-                            Product Name
-                        </label>
 
-                        <input
-                            type="text"
-                            id="productName"
-                            required
-                        >
+                <form id="productForm">
 
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="productCategory">
-                            Category
-                        </label>
-
-                        <select
-                            id="productCategory"
-                            required
-                        >
-
-                            <option value="laptop">
-                                Laptop
-                            </option>
-
-                            <option value="desktop">
-                                Desktop
-                            </option>
-
-                            <option value="component">
-                                Component
-                            </option>
-
-                            <option value="monitor">
-                                Monitor
-                            </option>
-
-                            <option value="accessory">
-                                Accessory
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="productCategoryName">
-                            Category Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="productCategoryName"
-                            placeholder="Gaming Laptop"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="productPrice">
-                            Price ($)
-                        </label>
-
-                        <input
-                            type="number"
-                            id="productPrice"
-                            min="0"
-                            step="0.01"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="productOldPrice">
-                            Old Price ($)
-                        </label>
-
-                        <input
-                            type="number"
-                            id="productOldPrice"
-                            min="0"
-                            step="0.01"
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="productDiscount">
-                            Discount (%)
-                        </label>
-
-                        <input
-                            type="number"
-                            id="productDiscount"
-                            min="0"
-                            max="100"
-                            value="0"
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="productStatus">
-                            Status
-                        </label>
-
-                        <select id="productStatus">
-
-                            <option value="available">
-                                Available
-                            </option>
-
-                            <option value="new">
-                                New
-                            </option>
-
-                            <option value="sold">
-                                Sold Out
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="productStock">
-                            Stock
-                        </label>
-
-                        <input
-                            type="number"
-                            id="productStock"
-                            min="0"
-                            step="1"
-                            value="0"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group full">
-
-                        <label for="productImage">
-                            Image URL
-                        </label>
-
-                        <input
-                            type="url"
-                            id="productImage"
-                            placeholder="https://..."
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group full">
-
-                        <label for="productDescription">
-                            Description
-                        </label>
-
-                        <textarea
-                            id="productDescription"
-                            rows="3"
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-                    <div class="form-group full">
-
-                        <label for="productSpecs">
-                            Specifications
-                        </label>
-
-                        <textarea
-                            id="productSpecs"
-                            rows="7"
-                            placeholder="CPU: Intel Core i9&#10;GPU: RTX 4070&#10;RAM: 32GB DDR5"
-                        ></textarea>
-
-                        <small>
-                            Write one specification per line using:
-                            <strong>Key: Value</strong>
-                        </small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        id="cancelProductForm"
+                    <input
+                        type="hidden"
+                        id="productId"
                     >
-                        Cancel
-                    </button>
 
-                    <button
-                        type="submit"
-                        class="primary-btn"
-                    >
-                        <i class="fa-solid fa-save"></i>
-                        Save Product
-                    </button>
 
-                </div>
+                    <div class="form-grid">
 
-            </form>
+                        <!-- NAME -->
+
+                        <div class="form-group full">
+
+                            <label for="productName">
+                                Product Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="productName"
+                                placeholder="Enter product name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- CATEGORY -->
+
+                        <div class="form-group">
+
+                            <label for="productCategory">
+                                Category
+                            </label>
+
+                            <select id="productCategory">
+
+                                <option value="">
+                                    Select category
+                                </option>
+
+                                <option value="laptop">
+                                    Laptop
+                                </option>
+
+                                <option value="desktop">
+                                    Desktop
+                                </option>
+
+                                <option value="monitor">
+                                    Monitor
+                                </option>
+
+                                <option value="keyboard">
+                                    Keyboard
+                                </option>
+
+                                <option value="mouse">
+                                    Mouse
+                                </option>
+
+                                <option value="headset">
+                                    Headset
+                                </option>
+
+                                <option value="component">
+                                    Component
+                                </option>
+
+                                <option value="accessories">
+                                    Accessories
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- CATEGORY NAME -->
+
+                        <div class="form-group">
+
+                            <label for="productCategoryName">
+                                Category Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="productCategoryName"
+                                placeholder="e.g. Gaming Laptop"
+                            >
+
+                        </div>
+
+
+                        <!-- PRICE -->
+
+                        <div class="form-group">
+
+                            <label for="productPrice">
+                                Price ($)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="productPrice"
+                                min="0"
+                                step="0.01"
+                                placeholder="0.00"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- OLD PRICE -->
+
+                        <div class="form-group">
+
+                            <label for="productOldPrice">
+                                Old Price ($)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="productOldPrice"
+                                min="0"
+                                step="0.01"
+                                placeholder="Optional"
+                            >
+
+                        </div>
+
+
+                        <!-- DISCOUNT -->
+
+                        <div class="form-group">
+
+                            <label for="productDiscount">
+                                Discount (%)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="productDiscount"
+                                min="0"
+                                max="100"
+                                step="1"
+                                placeholder="0"
+                            >
+
+                        </div>
+
+
+                        <!-- STATUS -->
+
+                        <div class="form-group">
+
+                            <label for="productStatus">
+                                Status
+                            </label>
+
+                            <select id="productStatus">
+
+                                <option value="available">
+                                    Available
+                                </option>
+
+                                <option value="new">
+                                    New
+                                </option>
+
+                                <option value="sold">
+                                    Sold
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- STOCK -->
+
+                        <div class="form-group">
+
+                            <label for="productStock">
+                                Stock Quantity
+                            </label>
+
+                            <input
+                                type="number"
+                                id="productStock"
+                                min="0"
+                                step="1"
+                                value="0"
+                                required
+                            >
+
+                            <small>
+                                Stock automatically decreases when orders are processed.
+                            </small>
+
+                        </div>
+
+
+                        <!-- IMAGE -->
+
+                        <div class="form-group full">
+
+                            <label for="productImage">
+                                Product Image URL
+                            </label>
+
+                            <input
+                                type="text"
+                                id="productImage"
+                                placeholder="https://..."
+                            >
+
+                        </div>
+
+
+                        <!-- DESCRIPTION -->
+
+                        <div class="form-group full">
+
+                            <label for="productDescription">
+                                Description
+                            </label>
+
+                            <textarea
+                                id="productDescription"
+                                rows="4"
+                                placeholder="Enter product description"
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- SPECIFICATIONS -->
+
+                        <div class="form-group full">
+
+                            <label for="productSpecs">
+                                Specifications
+                            </label>
+
+                            <textarea
+                                id="productSpecs"
+                                rows="5"
+                                placeholder="CPU: ...&#10;RAM: ...&#10;Storage: ..."
+                            ></textarea>
+
+                            <small>
+                                You can enter specifications line by line.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORM ACTIONS -->
+
+                    <div class="form-actions">
+
+                        <button
+                            type="button"
+                            class="secondary-btn"
+                            id="cancelProductForm"
+                        >
+                            Cancel
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Save Product
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
 
         </div>
 
-    </div>
+    </main>
 
 
     <script src="admin.js"></script>
 
 </body>
-
 </html>
